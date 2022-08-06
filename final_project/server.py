@@ -14,11 +14,11 @@ def english_to_french():
     method invoked to translate English text to French
     """
     # gets the text to translate
-    text_to_translate = request.args.get('text_to_translate')
+    textToTranslate = request.args.get('textToTranslate')
+    TranslatedTextToFrench = translator.english_to_french(textToTranslate)
     # translates English to French
-    translated_text_to_french = translator.english_to_french(text_to_translate)
-    return translated_text_to_french
-
+    return TranslatedTextToFrench
+ 
 # defines the route and the method to translate English to French
 @app.route('/frenchToEnglish')
 def french_to_english():
@@ -26,10 +26,10 @@ def french_to_english():
     method invoked to translate French text to English
     """
     # gets the text to translate
-    text_to_translate = request.args.get('text_to_translate')
+    textToTranslate = request.args.get('textToTranslate')
     # translates French to English
-    translated_text_to_english = translator.french_to_english(text_to_translate)
-    return translated_text_to_english
+    TranslatedTextToEnglish = translator.french_to_english(textToTranslate)
+    return TranslatedTextToEnglish
 
 # defines the root route
 @app.route("/")
