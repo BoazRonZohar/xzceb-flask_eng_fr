@@ -2,7 +2,6 @@
 This server translates English text to French and French text to English
 """
 from flask import Flask, render_template, request
-from final_project import machinetranslation
 from machinetranslation import translator
 
 # creats an object of the flask class as a web application
