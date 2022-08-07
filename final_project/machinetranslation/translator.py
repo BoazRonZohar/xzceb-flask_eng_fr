@@ -46,7 +46,7 @@ def french_to_english(french_text):
 # Tests the functions
 print('Sun in French is: ', english_to_french('sun'))
 print('Street in French is:', english_to_french('street'))
-print('How wre you? in French is:', english_to_french('How are you?'))
+print('How are you? in French is:', english_to_french('How are you?'))
 print('Soleil in English is: ', french_to_english('sun'))
 print('rue in English is:', french_to_english('rue'))
 print('Comment es-tu? in English is:', french_to_english('Comment vas-tu?'))
