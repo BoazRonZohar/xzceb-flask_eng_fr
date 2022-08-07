@@ -34,7 +34,7 @@ def english_to_french(english_text):
     # returns translation to French
     return french_text['translations'][0]['translation']
 
-# function to translate French text  to English text using IBM Watson Language translator
+# function to translate French text to English text using IBM Watson Language translator
 def french_to_english(french_text):
     """
     translate French text to English text using IBM Watson Language translator

@@ -23,7 +23,7 @@ class TestEnglishToFrench(unittest.TestCase):
 class TestFrenchToEnglish(unittest.TestCase):
     def test2(self):
         """
-        This tests translation from English to French
+        This tests translation from French to English
         """
         # Test when "Bonjour" is given as input the output is "Hello"
         self.assertEqual(french_to_english('bonjour'),'Hello')
