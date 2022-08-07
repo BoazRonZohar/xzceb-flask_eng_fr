@@ -19,7 +19,7 @@ def english_to_french():
     # translates English to French
     return TranslatedTextToFrench
  
-# defines the route and the method to translate English to French
+# defines the route and the method to translate French to English
 @app.route('/frenchToEnglish')
 def french_to_english():
     """
